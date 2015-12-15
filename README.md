@@ -4,7 +4,7 @@
 
 WSO2 log analyzer is a complete log analysis solution built on top of WSO2 DAS features. Dashboarding , reporting and alerting are the popular features of log analyzer.
 
-# Log API
+## Log API
 
 |Description | Publish log event
 |------------|-------
@@ -14,7 +14,7 @@ WSO2 log analyzer is a complete log analysis solution built on top of WSO2 DAS f
 
 Sample CURL Request 
 
-#### payload ##
+##### payload ##
 ```json
 {
  "@logstream"  : "['ESB', 'node-01']",
@@ -62,7 +62,7 @@ http Example
 
 Optionally you could transfer events via ssl using corresponding logstash configurations
 
-# Timestamp configuration
+## Timestamp configuration
 
 Inorder to use time range search queries, you should configure a proper timestamp in to the log event. You can use the default @timestamp in logstash.
 In case the log timestamp is not ISO8601 compatible, you can convert the time stamp to a long value and set it in @timestamp_long field
